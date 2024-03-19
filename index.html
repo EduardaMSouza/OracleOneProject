@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <img src="assets/Frame 6.png" class="logo">
+    <section class="content">
+        <section class="content__input">
+                <textarea id="content__input__input">Digite Aqui</textarea>
+            <div class="content__input__buttons">
+                <img src="assets/Frame 1.png" id="content__input__buttons__icon" >
+                <div class="content__input__buttons__buttons">
+                    <button onclick="encriptar()" class="buttons" id="button1">Codificar</button>
+                    <button onclick="desencriptar()" class="buttons" id="button2">Descodificar</button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="content__output">
+            <textarea readonly=true id="content__output__textarea"></textarea>
+            <!--...
+            <img src="assets/High quality products 1 1.svg" id="content__output__image">
+            --> 
+
+            <div class="content__output__message">
+                <h1 id="content__output__message__h1">Nenhuma mensagem encontrada</h1>
+                <h2 id="content__output__message__h2">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+                <button id="button_copy" ></button>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
