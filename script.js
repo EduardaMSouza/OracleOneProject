@@ -11,12 +11,14 @@ const encriptar = () => {
     const input = document.getElementById("content__input__input");
     const output = document.getElementById("content__output__textarea");
 
+    if(input.value.length!=0){
+        tirarBackground();
+    }else{
+        return;
+    }
+
     const textoEncriptado = codificador(input.value);
 
-    if(textoEncriptado.length!=0){
-        tirarBackground();
-
-    }
     output.value = textoEncriptado
     input.value = "";
 
@@ -26,11 +28,15 @@ const desencriptar = () => {
     const input = document.getElementById("content__input__input");
     const output = document.getElementById("content__output__textarea");
 
+    if(input.value.length!=0){
+        tirarBackground();
+    }else{
+        return;
+    }
+
     const textoEncriptado = descodificador(input.value);
 
-    if(textoEncriptado.length!=0){
-        tirarBackground();
-    }
+    
 
     output.value = textoEncriptado
     input.value = "";
