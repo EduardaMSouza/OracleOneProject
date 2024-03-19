@@ -83,7 +83,15 @@ const tirarBackground = () => {
     button.addEventListener("click", clipboard, false);
 
 
-    output.style.marginLeft = '9%'
+    if(screen.width < 500 ){
+        output.style.marginLeft = '0%'
+        output.style.marginTop = '9%'
+
+        output.style.width = '200px'
+    }else{
+        output.style.marginLeft = '10%'
+
+    }
 }
 
 const tirarmensagens = () => {
