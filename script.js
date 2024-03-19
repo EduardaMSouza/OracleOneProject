@@ -86,7 +86,7 @@ const tirarBackground = () => {
     if(screen.width < 500 ){
         output.style.marginLeft = '0%'
         output.style.marginTop = '9%'
-
+        output.style.borderRadius = '0px'
         output.style.width = '200px'
     }else{
         output.style.marginLeft = '10%'
